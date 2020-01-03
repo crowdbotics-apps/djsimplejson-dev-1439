@@ -76,7 +76,4 @@ class AppReportView(APIView):
         return parsed_data
 
     def get(self, request):
-        return Response({
-            "models": self._get_models(),
-            "urls": self._get_urls()
-        }, status=status.HTTP_200_OK)
+        return Response("not json", status=status.HTTP_200_OK)
