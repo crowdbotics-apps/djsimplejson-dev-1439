@@ -11,5 +11,4 @@ router.register('homepage', HomePageViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),
-    path("report", AppReportView.as_view(), name="app_report"),
 ]
